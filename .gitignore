@@ -53,3 +53,4 @@ coverage/
 *.bak
 *.orig
 *.rej
+*.zip
