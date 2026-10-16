@@ -1,0 +1,41 @@
+name: Bug report
+description: Report incorrect guidance, unsafe behavior, or a validator failure.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues before submitting. Use a minimal, sanitized example; remove secrets, private code, and personal data.
+  - type: input
+    id: affected-files
+    attributes:
+      label: Affected files or workflow
+      placeholder: scripts/validate-skill.py or workflows/code-review.md
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest input, command, or prompt that demonstrates the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and impact
+      description: Include relevant output. For agent behavior, distinguish the skill's instructions from the host or model's behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Include the commit or revision. For scripts, add OS, Python version, and exact command; for skill behavior, add host, model, and relevant setup if known.
+    validations:
+      required: true

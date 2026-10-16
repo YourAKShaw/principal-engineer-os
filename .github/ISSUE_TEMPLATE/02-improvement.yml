@@ -1,0 +1,32 @@
+name: Improvement proposal
+description: Propose a change to the skill, workflows, references, assets, or tooling.
+body:
+  - type: markdown
+    attributes:
+      value: Search existing issues first. Focus on a concrete engineering use case and keep examples free of sensitive information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or unmet use case
+      description: Who encounters this, and what happens with the current guidance or tooling?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Identify affected files or workflows and describe the intended behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+      description: Consider existing guidance, added complexity, portability, and token cost where relevant.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How to verify the improvement
+      description: Give an example scenario and observable success criteria. Do not invent evaluation results.
+    validations:
+      required: true
