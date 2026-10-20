@@ -8,7 +8,7 @@
 [![Python 3.9+](https://img.shields.io/badge/Validator-Python%203.9%2B-334155?style=flat-square)](../scripts/validate-skill.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2563EB?style=flat-square)](../LICENSE)
 
-[Project overview](README.md) · [Skill entry point](../SKILL.md) · [Get help](SUPPORT.md)
+[Project overview](../README.md) · [Skill entry point](../SKILL.md) · [Get help](SUPPORT.md)
 
 </div>
 

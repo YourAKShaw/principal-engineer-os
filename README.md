@@ -6,12 +6,12 @@
 
 Build with explicit trade-offs, protect the boundaries that matter, and verify what you deliver.
 
-[![Agent Skill](https://img.shields.io/badge/Agent-Skill-334155?style=flat-square)](../SKILL.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-2563EB?style=flat-square)](../LICENSE)
-[![Workflows](https://img.shields.io/badge/Workflows-7-334155?style=flat-square)](../workflows/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-2563EB?style=flat-square)](CONTRIBUTING.md)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-334155?style=flat-square)](SKILL.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2563EB?style=flat-square)](LICENSE)
+[![Workflows](https://img.shields.io/badge/Workflows-7-334155?style=flat-square)](workflows/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-2563EB?style=flat-square)](.github/CONTRIBUTING.md)
 
-[Explore the skill](../SKILL.md) · [Engineering constitution](../references/constitution.md) · [Contribute](CONTRIBUTING.md) · [Get help](SUPPORT.md)
+[Explore the skill](SKILL.md) · [Engineering constitution](references/constitution.md) · [Contribute](.github/CONTRIBUTING.md) · [Get help](.github/SUPPORT.md)
 
 </div>
 
@@ -44,7 +44,7 @@ PEOS supplies instructions and decision tools. Results still depend on the agent
 
 ## 🧩 How it works
 
-The skill starts with the [engineering constitution](../references/constitution.md), inspects the task and repository, and selects the relevant workflow. Domain guidance loads only when the changed boundaries need it.
+The skill starts with the [engineering constitution](references/constitution.md), inspects the task and repository, and selects the relevant workflow. Domain guidance loads only when the changed boundaries need it.
 
 ```mermaid
 flowchart TD
@@ -73,17 +73,17 @@ A small diff can carry substantial risk. These tiers guide engineering effort; t
 
 | Workflow | Use it for | Expected deliverable |
 | :--- | :--- | :--- |
-| [System design](../workflows/system-design.md) | New systems and consequential architecture choices | Boundaries, alternatives, failure model, and an incremental plan |
-| [Repository bootstrap](../workflows/repository-bootstrap.md) | New services, libraries, CLIs, and applications | A working vertical slice with a reproducible developer path |
-| [Feature implementation](../workflows/feature-implementation.md) | Features, fixes, integrations, and schema migrations | A focused behavioral change with verification and rollout considerations |
-| [Code review](../workflows/code-review.md) | Diff reviews, security assessments, and architecture audits | Prioritized findings with evidence and actionable fixes |
-| [Refactor and debug](../workflows/refactor-debug.md) | Diagnosis, behavior-preserving changes, and optimization | A supported diagnosis, preservation evidence, or measured improvement |
-| [Production readiness](../workflows/production-readiness.md) | Release assessments and operational handovers | A gate decision tied to a specific artifact and environment |
-| [Incident response](../workflows/incident-response.md) | Outages, degradation, and data-integrity incidents | Authorized stabilization, recovery evidence, and owned follow-ups |
+| [System design](workflows/system-design.md) | New systems and consequential architecture choices | Boundaries, alternatives, failure model, and an incremental plan |
+| [Repository bootstrap](workflows/repository-bootstrap.md) | New services, libraries, CLIs, and applications | A working vertical slice with a reproducible developer path |
+| [Feature implementation](workflows/feature-implementation.md) | Features, fixes, integrations, and schema migrations | A focused behavioral change with verification and rollout considerations |
+| [Code review](workflows/code-review.md) | Diff reviews, security assessments, and architecture audits | Prioritized findings with evidence and actionable fixes |
+| [Refactor and debug](workflows/refactor-debug.md) | Diagnosis, behavior-preserving changes, and optimization | A supported diagnosis, preservation evidence, or measured improvement |
+| [Production readiness](workflows/production-readiness.md) | Release assessments and operational handovers | A gate decision tied to a specific artifact and environment |
+| [Incident response](workflows/incident-response.md) | Outages, degradation, and data-integrity incidents | Authorized stabilization, recovery evidence, and owned follow-ups |
 
 ## 📥 Get started
 
-Choose the installation method for your environment. Keep [`SKILL.md`](../SKILL.md), `references/`, `workflows/`, `assets/`, and `scripts/` together so the skill can resolve its supporting resources.
+Choose the installation method for your environment. Keep [`SKILL.md`](SKILL.md), `references/`, `workflows/`, `assets/`, and `scripts/` together so the skill can resolve its supporting resources.
 
 ### Claude Code — clone and install
 
@@ -205,20 +205,20 @@ These illustrate the analysis the skill asks for. They are not claims of evaluat
 
 | Domain | Coverage |
 | :--- | :--- |
-| [Principles and patterns](../references/principles-and-patterns.md) | Invariants, abstraction, coupling, and the cost of complexity |
-| [Architecture and distributed systems](../references/architecture-and-distributed-systems.md) | Service boundaries, consistency, queues, caches, and capacity |
-| [APIs and data](../references/apis-and-data.md) | Contracts, transactions, concurrency, migrations, and retention |
-| [Security and privacy](../references/security-and-privacy.md) | Identity, authorization, tenant isolation, secrets, and supply chain |
-| [Reliability, observability, performance](../references/reliability-observability-performance.md) | SLOs, recovery, telemetry, saturation, and measurement |
-| [Testing, quality, delivery](../references/testing-quality-and-delivery.md) | Meaningful tests, reproducibility, dependencies, and release safety |
-| [Frontend and language overlays](../references/frontend-and-language-overlays.md) | Stack-specific hazards, browser state, accessibility, and mobile |
-| [AI agent engineering](../references/ai-agent-engineering.md) | LLMs, RAG, tool permissions, evaluations, and prompt injection |
+| [Principles and patterns](references/principles-and-patterns.md) | Invariants, abstraction, coupling, and the cost of complexity |
+| [Architecture and distributed systems](references/architecture-and-distributed-systems.md) | Service boundaries, consistency, queues, caches, and capacity |
+| [APIs and data](references/apis-and-data.md) | Contracts, transactions, concurrency, migrations, and retention |
+| [Security and privacy](references/security-and-privacy.md) | Identity, authorization, tenant isolation, secrets, and supply chain |
+| [Reliability, observability, performance](references/reliability-observability-performance.md) | SLOs, recovery, telemetry, saturation, and measurement |
+| [Testing, quality, delivery](references/testing-quality-and-delivery.md) | Meaningful tests, reproducibility, dependencies, and release safety |
+| [Frontend and language overlays](references/frontend-and-language-overlays.md) | Stack-specific hazards, browser state, accessibility, and mobile |
+| [AI agent engineering](references/ai-agent-engineering.md) | LLMs, RAG, tool permissions, evaluations, and prompt injection |
 
 ### Reusable engineering artifacts
 
-- **[Architecture decision record](../assets/adr-template.md):** capture a consequential choice, alternatives, evidence, and revisit triggers.
-- **[System design RFC](../assets/system-design-rfc.md):** make requirements, boundaries, failure behavior, and implementation milestones reviewable.
-- **[Production release gate](../assets/production-gate.md):** connect a release decision to executed checks, recovery evidence, and unresolved risks.
+- **[Architecture decision record](assets/adr-template.md):** capture a consequential choice, alternatives, evidence, and revisit triggers.
+- **[System design RFC](assets/system-design-rfc.md):** make requirements, boundaries, failure behavior, and implementation milestones reviewable.
+- **[Production release gate](assets/production-gate.md):** connect a release decision to executed checks, recovery evidence, and unresolved risks.
 
 Use these where they help the deliverable. Small changes do not need a document set.
 
@@ -231,7 +231,8 @@ principal-engineer-os/
 ├── workflows/        # Seven outcome-oriented engineering workflows
 ├── assets/           # ADR, system design RFC, and production gate
 ├── scripts/          # Package validator, wrappers, and regression suite
-├── .github/          # README, contributing guide, support, and issue/PR templates
+├── .github/          # Contributing guide, support, and issue/PR templates
+├── README.md         # Project overview
 └── LICENSE           # MIT License
 ```
 
@@ -247,14 +248,14 @@ python3 scripts/validate-skill.py
 
 The validator uses the Python 3.9+ standard library to check the manifest, required resources, local Markdown links and anchors, resource reachability, and empty or unfinished package files. It runs offline, installs nothing, and does not execute project code.
 
-It checks package integrity. Engineering quality, agent behavior, external link currency, and host-specific installation support require separate evaluation. See [contributing](CONTRIBUTING.md) for wrapper commands and validator regression checks.
+It checks package integrity. Engineering quality, agent behavior, external link currency, and host-specific installation support require separate evaluation. See [contributing](.github/CONTRIBUTING.md) for wrapper commands and validator regression checks.
 
 ---
 
 ## 🤝 Contributing and support
 
-Improvements are welcome, especially concrete failure cases, clearer decision guidance, and stronger verification examples. Start with the [contribution guide](CONTRIBUTING.md), use the [issue forms](https://github.com/YourAKShaw/principal-engineer-os/issues/new/choose), or read the [support guide](SUPPORT.md) for usage questions.
+Improvements are welcome, especially concrete failure cases, clearer decision guidance, and stronger verification examples. Start with the [contribution guide](.github/CONTRIBUTING.md), use the [issue forms](https://github.com/YourAKShaw/principal-engineer-os/issues/new/choose), or read the [support guide](.github/SUPPORT.md) for usage questions.
 
 ## License
 
-Distributed under the **MIT License**. See [LICENSE](../LICENSE) for details.
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
