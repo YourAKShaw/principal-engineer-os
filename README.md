@@ -11,7 +11,7 @@ Build with explicit trade-offs, protect the boundaries that matter, and verify w
 [![Workflows](https://img.shields.io/badge/Workflows-7-334155?style=flat-square)](workflows/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-2563EB?style=flat-square)](.github/CONTRIBUTING.md)
 
-[Explore the skill](SKILL.md) · [Engineering constitution](references/constitution.md) · [Contribute](.github/CONTRIBUTING.md) · [Get help](.github/SUPPORT.md)
+[Explore the skill](SKILL.md) · [Engineering constitution](references/constitution.md) · [Contribute](.github/CONTRIBUTING.md) · [Get help](.github/SUPPORT.md) · [Security](SECURITY.md)
 
 </div>
 
@@ -233,6 +233,7 @@ principal-engineer-os/
 ├── scripts/          # Package validator, wrappers, and regression suite
 ├── .github/          # Contributing guide, support, and issue/PR templates
 ├── README.md         # Project overview
+├── SECURITY.md       # Vulnerability reporting policy
 └── LICENSE           # MIT License
 ```
 
@@ -254,7 +255,7 @@ It checks package integrity. Engineering quality, agent behavior, external link 
 
 ## 🤝 Contributing and support
 
-Improvements are welcome, especially concrete failure cases, clearer decision guidance, and stronger verification examples. Start with the [contribution guide](.github/CONTRIBUTING.md), use the [issue forms](https://github.com/YourAKShaw/principal-engineer-os/issues/new/choose), or read the [support guide](.github/SUPPORT.md) for usage questions.
+Improvements are welcome, especially concrete failure cases, clearer decision guidance, and stronger verification examples. Start with the [contribution guide](.github/CONTRIBUTING.md), use the [issue forms](https://github.com/YourAKShaw/principal-engineer-os/issues/new/choose), or read the [support guide](.github/SUPPORT.md) for usage questions. Report vulnerabilities privately as described in the [security policy](SECURITY.md), not in a public issue.
 
 ## License
 
