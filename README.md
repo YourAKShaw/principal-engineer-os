@@ -2,6 +2,8 @@
 
 # 🧭 Principal Engineer OS
 
+[![HOL Guard](https://img.shields.io/endpoint?url=https%3A%2F%2Fhol.org%2Fapi%2Fregistry%2Fbadges%2Fplugin%3Fslug%3Dyourakshaw%252Fprincipal-engineer-os%26metric%3Drelease)](https://hol.org/registry/plugins/yourakshaw%2Fprincipal-engineer-os)
+
 **Principal-engineer judgment for AI-assisted software engineering.**
 
 Build with explicit trade-offs, protect the boundaries that matter, and verify what you deliver.
